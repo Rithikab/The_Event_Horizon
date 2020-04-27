@@ -13,28 +13,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 //import android.widget.Toolbar;
 
 import com.example.theeventhorizon.ui.main.SectionsPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button amodButton;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        amodButton = findViewById(R.id.amod_button);
-        amodButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openAMOD();
-
-            }
-        });
 
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
         //SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager(),tabs.getTabCount());
@@ -78,10 +67,5 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-    }
-
-    public void openAMOD() {
-        Intent amodIntent = new Intent(this, AMODAct.class);
-        startActivity(amodIntent);
     }
 }
