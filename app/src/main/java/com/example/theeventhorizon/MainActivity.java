@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toolbar;
 
 import com.example.theeventhorizon.ui.main.SectionsPagerAdapter;
 
@@ -35,5 +36,8 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.tabs);
+
     }
 }
