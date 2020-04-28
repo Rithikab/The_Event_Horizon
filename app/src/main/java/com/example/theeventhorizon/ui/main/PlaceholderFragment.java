@@ -54,6 +54,11 @@ public class PlaceholderFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_main, container, false);
         final TextView textView = (TextView) root.findViewById(R.id.section_label);
         textView.setText(tabText);
+
+        String spaceText = String.format("Testing %s", "Space Tab");
+        TextView spaceView = (TextView) SectionsPagerAdapter.getPageTitle(SpaceTab);
+        textView.setText(spaceText);
+
 //        textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
 
 //        pageViewModel.getText().observe(this, new Observer<String>() {
