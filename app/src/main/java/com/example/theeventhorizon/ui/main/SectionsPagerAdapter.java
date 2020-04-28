@@ -1,6 +1,7 @@
 package com.example.theeventhorizon.ui.main;
 
 import android.content.Context;
+import android.content.SyncStatusObserver;
 
 import androidx.annotation.Nullable;
 //import androidx.annotation.StringRes;
@@ -11,6 +12,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import com.example.theeventhorizon.APODTab;
 //import com.example.theeventhorizon.PageAdapter;
 //import com.example.theeventhorizon.R;
+import com.example.theeventhorizon.R;
 import com.example.theeventhorizon.SpaceTab;
 import com.example.theeventhorizon.SpaceXTab;
 

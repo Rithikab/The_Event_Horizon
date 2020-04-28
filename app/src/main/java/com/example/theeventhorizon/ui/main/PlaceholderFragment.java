@@ -13,6 +13,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.theeventhorizon.R;
+import com.example.theeventhorizon.SpaceTab;
 
 /**
  * A placeholder fragment containing a simple view.
@@ -46,10 +47,14 @@ public class PlaceholderFragment extends Fragment {
     public View onCreateView(
             @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
+        String tabText = String.format(
+                "This is %s !!",
+                "SPARTAA");
+
         View root = inflater.inflate(R.layout.fragment_main, container, false);
         final TextView textView = (TextView) root.findViewById(R.id.section_label);
-        textView.setText(getString());
-        textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+        textView.setText(tabText);
+//        textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
 
 //        pageViewModel.getText().observe(this, new Observer<String>() {
 //            @Override
