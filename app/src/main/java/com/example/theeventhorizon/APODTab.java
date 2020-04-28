@@ -16,14 +16,14 @@ import android.view.View;
 
 public class APODTab extends Fragment {
 
-    //private Button amodButton;
+//    private Button amodButton;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.apod_tab, container, false);
 
-//        amodButton = (Button) findViewById(R.id.amod_button);
+        //amodButton = (Button) findViewById(R.id.amod_button);
 //        amodButton.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
