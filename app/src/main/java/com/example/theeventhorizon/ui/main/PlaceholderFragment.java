@@ -48,6 +48,7 @@ public class PlaceholderFragment extends Fragment {
             Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_main, container, false);
         final TextView textView = (TextView) root.findViewById(R.id.section_label);
+        textView.setText(getString());
         textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
 
 //        pageViewModel.getText().observe(this, new Observer<String>() {

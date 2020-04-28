@@ -6,6 +6,6 @@
     <string name="apod_tab_test">APOD Tab Test</string>
     <string name="open_amod">Open AMOD</string>
     <string name="spaceX_tab_test">SpaceX Tab Test</string>
-    <string name="section_format">Section text. Taken from strings.xml</string>
+    <string name="section_format">Section text</string>
 
 </resources>
