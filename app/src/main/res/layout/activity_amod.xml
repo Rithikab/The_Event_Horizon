@@ -6,9 +6,9 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
+        android:id="@+id/textView2"
+        android:layout_width="224dp"
         android:layout_height="wrap_content"
-        android:text="@string/spaceX_tab_test"
+        android:text="AMOD Tab"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 </RelativeLayout>

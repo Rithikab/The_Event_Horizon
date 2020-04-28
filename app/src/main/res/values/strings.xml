@@ -2,4 +2,9 @@
     <string name="app_name">The Event Horizon</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="space_tab_test">Space Tab Test</string>
+    <string name="apod_tab_test">APOD Tab Test</string>
+    <string name="open_amod">Open AMOD</string>
+    <string name="spaceX_tab_test">SpaceX Tab Test</string>
+
 </resources>

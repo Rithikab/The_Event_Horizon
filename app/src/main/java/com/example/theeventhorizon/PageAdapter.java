@@ -13,25 +13,37 @@ public class PageAdapter extends FragmentStatePagerAdapter {
     }
 
     @Override
-    public Fragment getItem(int i) {
-        switch (i) {
+    public Fragment getItem(int position) {
+        switch (position) {
 
-            case 1 :
+            case 0 :
                 SpaceTab spaceTab = new SpaceTab();
                 return spaceTab;
-            case 2 :
+            case 1 :
                 APODTab apodTab = new APODTab();
                 return apodTab;
-            case 3 :
+            case 2 :
                 SpaceXTab spaceXTab = new SpaceXTab();
                 return spaceXTab;
-            default:
-                return null;
         }
+        return null;
     }
 
     @Override
     public int getCount() {
         return countTab;
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        switch (position) {
+            case 0:
+                return "Space News";
+            case 1:
+                return "APOD";
+            case 2:
+                return "SpaceX";
+        }
+        return null;
     }
 }
