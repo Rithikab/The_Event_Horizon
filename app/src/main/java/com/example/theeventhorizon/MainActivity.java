@@ -1,6 +1,5 @@
 package com.example.theeventhorizon;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -13,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-//import android.widget.Toolbar;
 
 import com.example.theeventhorizon.ui.main.SectionsPagerAdapter;
 
@@ -61,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Function not supported as of yet.", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
