@@ -47,7 +47,9 @@ public class PlaceholderFragment extends Fragment {
     public View onCreateView(
             @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
-
+        String tabText = String.format(
+                "This is %s !!",
+                "SPARTAA");
 
         View root = inflater.inflate(R.layout.fragment_main, container, false);
         final TextView textView = (TextView) root.findViewById(R.id.section_label);
@@ -67,4 +69,5 @@ public class PlaceholderFragment extends Fragment {
 //        });
         return root;
     }
+
 }
