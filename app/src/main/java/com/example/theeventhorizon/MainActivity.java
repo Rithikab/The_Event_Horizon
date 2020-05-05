@@ -28,7 +28,6 @@ import com.android.volley.toolbox.Volley;
 import com.example.theeventhorizon.ui.main.SectionsPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
-    final TextView textView = (TextView) findViewById(R.id.textView); // Not sure if it's supposed to be section_label
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        final TextView textView = (TextView) findViewById(R.id.textView);
 
         // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);
