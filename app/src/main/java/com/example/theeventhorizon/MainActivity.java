@@ -47,6 +47,11 @@ public class MainActivity extends AppCompatActivity {
         tabs.setTabGravity(TabLayout.GRAVITY_FILL);
         tabs.setupWithViewPager(viewPager);
 
+//        //This block of code changed the tab texts
+//        tabs.getTabAt(0).setText(getResources().getText(R.string.space_tab_test));
+//        tabs.getTabAt(1).setText(getResources().getText(R.string.apod_tab_test));
+//        tabs.getTabAt(2).setText(getResources().getText(R.string.spaceX_tab_test));
+
         tabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {

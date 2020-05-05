@@ -47,6 +47,8 @@ public class PlaceholderFragment extends Fragment {
     public View onCreateView(
             @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
+
+        //Default text is now "This is SPARTAA".
         String tabText = String.format(
                 "This is %s !!",
                 "SPARTAA");
@@ -55,9 +57,17 @@ public class PlaceholderFragment extends Fragment {
         final TextView textView = (TextView) root.findViewById(R.id.section_label);
         textView.setText(tabText);
 
-        String spaceText = String.format("Testing %s", "Space Tab");
-        //TextView spaceView = (TextView) SectionsPagerAdapter.getPageTitle(ARG_SECTION_NUMBER);
-        textView.setText(spaceText);
+//        // Bundle method is the next few lines of code:
+//        Bundle textBundle = new Bundle();
+//        String spaceText1 = textBundle.getString(ARG_SECTION_NUMBER, "Text");
+//        int spaceTabKey = textBundle.getInt(ARG_SECTION_NUMBER);
+//
+//        // These are similar to the method used to show "This is SPARTAA", but not sure how
+//        // to getPageTitle to input text for each tab.
+//        String spaceText = String.format("Testing %s", "Space Tab");
+//        TextView spaceView = (TextView) SectionsPagerAdapter.getPageTitle();
+//        textView.setText(spaceText);
+
 
 //        textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
 
