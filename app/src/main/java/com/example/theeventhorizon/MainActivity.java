@@ -1,5 +1,7 @@
 package com.example.theeventhorizon;
 
+import org.json.JSONObject;
+
 import android.os.Bundle;
 
 import com.android.volley.toolbox.StringRequest;
@@ -95,6 +97,28 @@ public class MainActivity extends AppCompatActivity {
         });
 
         queue.add(stringRequest);
+
+        // Creating a new Json Object Request.
+
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
+                (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        textView.setText("Response: " + response.toString());
+                    }
+                }, new Response.ErrorListener() {
+
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        textView.setText("That didn't work!");
+                        //Handling Error.
+
+                    }
+                });
+
+        // Access the RequestQueue.
+        queue.add(jsonObjectRequest);
 
 
     }
