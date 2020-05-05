@@ -76,7 +76,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        final TextView textView = (TextView) findViewById(R.id.textView);
+        View text = new View(this);
+
+        final TextView textView = (TextView) findViewById(R.id.text);
 
         // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);
