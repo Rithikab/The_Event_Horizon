@@ -56,7 +56,7 @@ public class PlaceholderFragment extends Fragment {
         textView.setText(tabText);
 
         String spaceText = String.format("Testing %s", "Space Tab");
-        TextView spaceView = (TextView) SectionsPagerAdapter.getPageTitle(ARG_SECTION_NUMBER);
+        //TextView spaceView = (TextView) SectionsPagerAdapter.getPageTitle(ARG_SECTION_NUMBER);
         textView.setText(spaceText);
 
 //        textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
