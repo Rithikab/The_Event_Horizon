@@ -24,6 +24,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import java.net.HttpURLConnection;
 
 import com.example.theeventhorizon.ui.main.SectionsPagerAdapter;
 
@@ -82,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "/api/?count=5";
+        String url = "https://apodapi.herokuapp.com/api/?count=5";
 
         // Request a string response from the provided URL.
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
